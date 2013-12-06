@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<Button
+	android:id="@+id/bt_speak" 
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Speak"
+    />
+<TextView  
+	android:id="@+id/tv_result" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    />
+</LinearLayout>
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:scrollbarSize="0dp"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="529dp"
+        android:layout_gravity="fill"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/test_your_ear" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_below="@+id/imageButton1"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/speech_to_text" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_alignTop="@+id/imageButton3"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/forum" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="285dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:layout_below="@+id/imageButton3"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/learn_gesture" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:layout_below="@+id/imageButton5"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:text="AndroEar"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/text_to_speech" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_alignTop="@+id/imageButton6"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/imageButton7"
+            android:layout_below="@+id/imageButton6"
+            android:layout_marginTop="15dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="sample"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17sp" />
+        <!--
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageButton2"
+            android:text="Button" />
+        -->
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/imageButton2"
+            android:layout_alignTop="@+id/textView1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/aboutus" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="Nothing"
+        android:key="phone"
+        android:summary="Emergency messages will be sent to the following number"
+        android:title="Enter phone number" />
+
+    <!--
+           <EditTextPreference
+        android:defaultValue="1500"
+        android:key="force"
+        android:numeric="integer"
+  	    android:maxLength="4"
+        android:summary="Set force with which the phone should be shook to send emergency message"
+        android:title="Enter force (Newtons)" /> 
+    -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="sos"
+        android:summary="Enable/Disable emergency messaging"
+        android:title="Emergency Messaging" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="whistle"
+        android:summary="Enable/Disable whistle recognision"
+        android:title="Whistle" />
+
+</PreferenceScreen>
